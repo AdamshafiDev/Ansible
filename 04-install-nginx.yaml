@@ -1,5 +1,5 @@
 - name: Install nginx
-  hosts: frontend
+  hosts: web
   tasks:
    - name: install inginx sever
      ansible.builtin.package:
