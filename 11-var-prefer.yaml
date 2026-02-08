@@ -2,8 +2,8 @@
 - name: Var presefer
   hosts: local
   connection: local
-  vars:
-   GREETING: Hello from play
+  # vars:
+  #  GREETING: Hello from play
   # vars_files:
   #  - course.yaml
   # vars_prompt:
