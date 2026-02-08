@@ -13,6 +13,6 @@
     ci: jenkins
     scripts: "shell, ansible, teraform, python"
   tasks:
-   - name: datatype print
+   - name: print couse info
      ansible.builtin.debug:
        msg: "Hello  {{ course }}, {{ TOOLS }}, {{ concepts }}"
