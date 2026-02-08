@@ -6,4 +6,4 @@
   tasks:
    - name: file leves tasks
      ansible.builtin.debug:
-       msg: "Hello {{ course }},duration is {{ duration }}, {{ trainer }}"
+      msg: "Hello {{ course }}, duration is {{ duration }}, trainer is  {{ trainer }}"
