@@ -11,6 +11,4 @@
       course: ansible
      ansible.builtin.debug:
        msg: "hello {{ course }}, course duration {{ duration }}, Trainer is {{ trainer }}"
-   - name: print variables
-     ansible.builtin.debug:
-       msg: "hello {{ course }}, course duration {{ duration }}, Trainer is {{ trainer }}"     
+   
