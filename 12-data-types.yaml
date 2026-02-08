@@ -9,7 +9,7 @@
     - linux
     - shell
     - ansible
-  concepts: 
+   concepts: 
     ci: jenkins
     scripts: "shell, ansible, teraform, python"
   tasks:
