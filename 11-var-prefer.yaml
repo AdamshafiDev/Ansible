@@ -13,7 +13,7 @@
   tasks:
    - name: enter prefrer locations
      vars: 
-      GREETING "Hello tasks"
+      GREETING: "Hello tasks"
      ansible.builtin.debug:
       msg: "Hello {{ GREETING }}" 
      
