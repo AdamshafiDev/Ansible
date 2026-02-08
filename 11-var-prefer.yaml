@@ -12,8 +12,8 @@
       private: true
   tasks:
    - name: enter prefrer locations
-     vars: 
-      GREETING: "Hello tasks"
+    #  vars: 
+    #   GREETING: "Hello tasks"
      ansible.builtin.debug:
       msg: "Hello {{ GREETING }}" 
      
