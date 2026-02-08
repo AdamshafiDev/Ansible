@@ -6,10 +6,10 @@
    GREETING: Hello from play
   # vars_files:
   #  - course.yaml
-  vars_prompt:
-    - name: GREETING
-      prompt: enter username
-      private: true
+  # vars_prompt:
+  #   - name: GREETING
+  #     prompt: enter username
+  #     private: true
   tasks:
    - name: enter prefrer locations
     #  vars: 
