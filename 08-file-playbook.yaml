@@ -1,0 +1,9 @@
+- name: files with course
+  hosts: local
+  connection: local
+  vars_files:
+   - course.yaml
+  tasks:
+   - name: file leves tasks
+     ansible.builtin.debug:
+       msg: "Hello {{ course }},duration is {{ duration }}, {{ trainer }}"
