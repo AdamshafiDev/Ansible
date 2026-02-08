@@ -1,0 +1,5 @@
+- name: ping sever name
+  hosts: web
+  tasks: #list of tasks
+  ansible.builtin.ping:
+   mes: "ping the server"
