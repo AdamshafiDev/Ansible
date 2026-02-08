@@ -4,6 +4,5 @@
   tasks:
    - name: hellow world
      ansible.builtin.debug:     
-
       meg: "hello world"
   
