@@ -3,6 +3,7 @@
   connection: local
   tasks:
    - name: hellow world
-     ansible.buildin.debug:
+     ansible.builtin.debug:     
+
       meg: "hello world"
   
