@@ -1,7 +1,14 @@
 - name: functions
   hosts: local
   connection: local
+  vars:
+   per: "adam,shafi,raju"
   tasks:
+  
    - name: functions
      ansible.builtin.debug:
       msg: " Hello {{ person | default('adam')}}"
+
+   - name: functions
+     ansible.builtin.debug:
+      msg: " Hello {{ per | split(',')}}"
