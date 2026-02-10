@@ -3,13 +3,13 @@
   become: yes
   tasks:
    - name: loops
-     ansible.builtin.debug:
+     ansible.builtin.package:
       msg: "Hello {{ item }}"
      loop:
-      - adam
-      - shafi
-      - rahamtulla
-      - ayesha
+      - mysql
+      - nginx
+      - zip
+      
       
 
 
