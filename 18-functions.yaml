@@ -32,8 +32,8 @@
      ansible.builtin.debug:
       msg: " course info : {{ course | items2dict }}"   
 
-   - name: convet to upper
+   - name: convert  to upper
      vars:
        name: "adamshafi shafi"
-       ansible.builtin.debug:
+     ansible.builtin.debug:
         msg: "hello {{ name | upper }}"
