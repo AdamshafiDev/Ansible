@@ -1,12 +1,38 @@
-- name: lopps intall package
+- name: lopps in yaml
   hosts: frontend
   become: yes
   tasks:
-   - name: install packages
-     ansible.builtin.package:
-      name: "{{ item }}"
-      state: installed
+   - name: loops
+     ansible.builtin.debug:
+      msg: "Hello {{ item }}"
      loop:
-      - mysql
-      - nginx
-      - zip
+      - adam
+      - shafi
+      - rahamtulla
+      - ayesha
+      
+
+
+
+
+
+
+
+
+
+
+
+
+# - name: lopps intall package
+
+#   hosts: frontend
+#   become: yes
+#   tasks:
+#    - name: install packages
+#      ansible.builtin.package:
+#       name: "{{ item }}"
+#       state: installed
+#      loop:
+#       - mysql
+#       - nginx
+#       - zip
