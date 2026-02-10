@@ -1,0 +1,13 @@
+- name: lopps in yaml
+  hosts: local
+  connection: local
+  tasks:
+   - name: loops
+     ansible.builtin.debug:
+      msg: "Hello {{ item }}"
+     loop:
+      - adam
+      - shafi
+      - rahamtulla
+      - ayesha
+      
