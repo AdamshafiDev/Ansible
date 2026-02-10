@@ -2,6 +2,6 @@
   hosts: frontend
   tasks:
   - name: redirect to output file
-    ansible.builtin.command: "ls -lrt  > /tmp/output.txt"
-    #ansible.builtin.shell: "ls -lrt  > /tmp/output.txt" 
+    #ansible.builtin.command: "ls -lrt  > /tmp/output.txt"
+    ansible.builtin.shell: "ls -lrt  > /tmp/output.txt" 
     
