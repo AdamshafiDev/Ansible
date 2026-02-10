@@ -4,9 +4,9 @@
   - name: redirect to output file
     #ansible.builtin.command: "ls -lrt  > /tmp/output.txt"
     ansible.builtin.shell: "ls -lrt  > /tmp/output.txt" 
-    register: resulut
-    
+    register: result
+
   - name: print ourput
     ansible.builtin.debug:
-     msg: "{{ register }}"
+     msg: "{{ result }}"
     
