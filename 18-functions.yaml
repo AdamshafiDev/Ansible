@@ -20,4 +20,4 @@
        duration: 10HR
        trainer: adamshafi
      ansible.builtin.debug:
-      msg: " course info : {{ course | dict2item }}"
+      msg: " course info : {{ course | dict2items }}"
