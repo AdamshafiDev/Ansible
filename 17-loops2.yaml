@@ -1,11 +1,11 @@
 - name: lopps intall package
-  hosts: local
-  connection: local
+  hosts: frontend
+  become: yes
   tasks:
    - name: install packages
      ansible.builtin.package:
       name: "{{ item }}"
-      state: present
+      state: installed
      loop:
       - mysql
       - nginx
