@@ -7,5 +7,5 @@
     register: resulut
   - name: print ourput
     ansible.builtin.debug:
-     msg: "{{ result }}"
+     msg: "{{ register }}"
     
