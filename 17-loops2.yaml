@@ -1,38 +1,12 @@
-- name: lopps in yaml
+- name: lopps intall package
   hosts: frontend
   become: yes
   tasks:
-   - name: loops
+   - name: install packages
      ansible.builtin.package:
-      msg: "Hello {{ item }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
      loop:
-      - mysql
-      - nginx
-      - zip
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-# - name: lopps intall package
-
-#   hosts: frontend
-#   become: yes
-#   tasks:
-#    - name: install packages
-#      ansible.builtin.package:
-#       name: "{{ item }}"
-#       state: installed
-#      loop:
-#       - mysql
-#       - nginx
-#       - zip
+      - { name: 'mysql', state: 'present'}
+      - { name: 'nginxl', state: 'absent'}
+      - { name: 'zip', state: 'absent'}
