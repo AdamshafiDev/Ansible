@@ -1,0 +1,18 @@
+- name: conditions in os-family
+  hosts: frontend
+  become: yes
+  connecction: local
+  tasks:
+   - name: please install nginx
+     ansible.builtin.dnf:
+      name: nginx
+      state: present
+     when: ansible_os_family == "RedHat"
+
+   - name: please install nginx debian
+     ansible.builtin.apt:
+      name: nginx
+      state: present 
+     when: ansible_os_family == "Debian"    
+
+      
