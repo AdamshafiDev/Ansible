@@ -1,7 +1,7 @@
 - name: conditions in os-family
   hosts: frontend
   become: yes
-  connecction: local
+  connection: local
   tasks:
    - name: please install nginx
      ansible.builtin.dnf:
